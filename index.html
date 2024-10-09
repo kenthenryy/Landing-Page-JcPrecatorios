@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JC Precatórios - Liquidez rápida para seus Precatórios</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <img src="images/logobrancosemfundo.png" alt="Logo JC Precatórios" class="logo">
+    <a href="#consulta-form">Consulta</a>
+</header>
+
+<section class="about-section">
+    <h2>Transforme seu precatório em capital imediato com segurança e transparência!</h2>
+    <p>Venda rápida, sem burocracia. Dinheiro em até 24h!</p>
+    <p>Liquidez imediata para seus precatórios, com pagamento de até R$10 milhões à vista!</p>
+</section>
+
+<section class="client-section">
+    <div class="client-container">
+        <div class="client-text">
+            <h2>Nossos Clientes sonham, constroem e conquistam!</h2>
+            <p>Nosso objetivo é ajudá-los a alcançar seus sonhos. Auxiliamos você a obter seus precatórios para que possa desfrutar de suas conquistas e aproveitar seu dinheiro.</p>
+            <!-- Botão "Tenho um precatório" -->
+            <a href="#consulta-form" class="btn-primary">Tenho um precatório</a>
+        </div>
+        <div class="client-image">
+            <img src="images/customer-image.png" alt="Cliente" class="customer-img">
+        </div>
+    </div>
+</section>
+
+
+<section class="precatorio-info-section">
+    <h2>Quais serviços a JC Precatórios oferece?</h2>
+    <ul class="precatorio-info">
+        <li><i class="fa-solid fa-circle-check" style="color: #000000;"></i> Atendimento Personalizado</li>
+        <li><i class="fa-solid fa-circle-check" style="color: #000000;"></i> Valor Bruto do Precatório Atualizado</li>
+        <li><i class="fa-solid fa-circle-check" style="color: #000000;"></i> Atualizações recorrentes sobre o processo de venda do crédito</li>
+        <li><i class="fa-solid fa-circle-check" style="color: #000000;"></i> Negociação de Precatórios Federais, Estaduais e Municipais</li>
+    </ul>
+</section>
+
+<section class="security-section">
+    <div class="security-container">
+        <div class="security-image">
+            <img src="images/btg-imagelogodirmenor2.png" alt="Banco BTG Pactual" class="btg-img">
+        </div>
+        <div class="security-text">
+            <h2>Segurança e transparência</h2>
+            <p>Na JC Precatórios, garantimos a segurança total na venda de seus precatórios. Temos uma parceria sólida com o Banco BTG Pactual, assegurando transparência e confiabilidade em todas as etapas da negociação.</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="form-section" id="consulta-form">
+    <h3>Fale conosco no Whatsapp:</h3>
+    <form id="contact-form">
+        <label for="firstName">Nome:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Sobrenome:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="whatsapp">WhatsApp:</label>
+        <input type="text" id="whatsapp" name="whatsapp" required>
+
+        <div class="submit-container">
+            <button type="submit">
+                Enviar
+                <i class="fab fa-whatsapp"></i>
+            </button>
+        </div>
+    </form>
+</section>
+
+<footer>
+    <div class="footer-top">
+        <div class="footer-left">
+            <img src="images/logobrancosemfundo.png" alt="Logo JC Precatórios" class="logo">
+            <a class="whatsapp-link" href="https://api.whatsapp.com/send?phone=5561991156896">
+                <i class="fab fa-whatsapp"></i> Fale Conosco via WhatsApp
+            </a>
+        </div>
+        <div class="footer-right">
+            <p>CEP: 12345-678</p>
+            <p>Endereço: Rua Exemplo, 123, Cidade, Estado</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const firstName = document.getElementById('firstName').value;
+        const lastName = document.getElementById('lastName').value;
+        const email = document.getElementById('email').value;
+        const whatsapp = document.getElementById('whatsapp').value;
+
+        const message = `Olá, gostaria de consultar sobre meu precatório. Aqui estão meus dados:\nNome: ${firstName} ${lastName}\nEmail: ${email}\nWhatsApp: ${whatsapp}`;
+
+        const whatsappUrl = `https://api.whatsapp.com/send?phone=5561991156896&text=${encodeURIComponent(message)}`;
+        window.open(whatsappUrl, '_blank');
+    });
+</script>
+
+
+</body>
+</html>
