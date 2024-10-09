@@ -31,24 +31,17 @@ O site da JC Precatórios foi desenvolvido com o objetivo de facilitar a comunic
 - **VS Code:** Editor de código utilizado no desenvolvimento.
 
 ## Estrutura do Projeto
-
+```
 A estrutura do projeto é organizada da seguinte forma:
-
 .
 ├── images/                 # Imagens usadas no site
-
-│         ├── logobrancosemfundo.png
-
-│         ├── customer-image.png
-
-│         └── btg-imagelogodirmenor2.png
-
+│   ├── logobrancosemfundo.png
+│   ├── customer-image.png
+│   └── btg-imagelogodirmenor2.png
 ├── styles.css              # Arquivo de estilos CSS
-
 ├── index.html              # Arquivo principal HTML
-
 └── README.md               # Documentação do projeto
-
+```
 ## Uso
 
 ### Envio de Formulário via WhatsApp
