@@ -1,4 +1,13 @@
 /* Basic Reset and Body Styling */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,11 +16,11 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9; /* Set light grey background */
+    background-color: #f9f9f9;
     color: black;
 }
 
-/* Header Styling with Flexbox for Centering */
+/* Header Styling */
 header {
     background-color: #141414;
     color: white;
@@ -27,7 +36,6 @@ header .logo {
     margin: 0;
     pointer-events: none;
     cursor: default;
-    
 }
 
 header a {
@@ -36,8 +44,6 @@ header a {
     padding: 20px 40px;
     text-decoration: none;
     border-radius: 5px;
-    
-    
 }
 
 header a:hover {
@@ -64,8 +70,8 @@ header a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #f2f2f2; /* Change to black */
-    color: black; /* Change text color to white */
+    background-color: #f2f2f2;
+    color: black;
 }
 
 .client-container {
@@ -77,33 +83,33 @@ header a:hover {
 }
 
 .client-text {
-    max-width: 50%; /* Text on the left */
+    max-width: 50%;
 }
 
 .client-text h2 {
     font-size: 24px;
     margin-bottom: 15px;
-    color: black; /* Set text color to white */
+    color: black;
 }
 
 .client-text p {
     font-size: 18px;
     line-height: 1.5;
-    color: black; /* Set text color to white */
+    color: black;
 }
 
 .client-image {
-    max-width: 40%; /* Image on the right */
+    max-width: 40%;
 }
 
 .customer-img {
     width: 100%;
     height: auto;
-    max-width: 1366px; /* Set max width to prevent overflow */
+    max-width: 1366px;
     border-radius: 20px;
 }
 
-/* Estilo para o botão "Tenho um precatório" */
+/* Button Styling */
 .btn-primary {
     background-color: #25d366;
     color: white;
@@ -120,37 +126,6 @@ header a:hover {
     background-color: #128c7e;
     transform: scale(1.05);
 }
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .client-section {
-        flex-direction: column; /* Muda a direção para coluna */
-        text-align: center; /* Centraliza o texto */
-        padding: 20px; /* Ajusta o padding para telas menores */
-    }
-
-    .client-container {
-        flex-direction: column; /* Alinha texto e imagem em coluna */
-        align-items: center; /* Centraliza o conteúdo */
-    }
-
-    .client-text {
-        max-width: 100%; /* Garante que o texto ocupe toda a largura */
-        margin-bottom: 20px; /* Adiciona espaçamento entre o texto e a imagem */
-    }
-
-    .client-image {
-        max-width: 80%; /* Ajusta o tamanho máximo da imagem */
-        margin-bottom: 20px; /* Adiciona margem inferior para separar da próxima seção */
-    }
-
-    .customer-img {
-        width: 100%; /* Garante que a imagem ocupe toda a largura disponível */
-        height: auto; /* Mantém a proporção da imagem */
-        border-radius: 10px; /* Suaviza as bordas da imagem */
-    }
-}
-
 
 /* Precatório Info Section Styling */
 .precatorio-info-section {
@@ -205,14 +180,14 @@ header a:hover {
 }
 
 .security-text {
-    max-width: 50%; /* Alinhar o texto à direita */
+    max-width: 50%;
     text-align: right;
 }
 
 .security-text h2 {
     font-size: 24px;
     margin-bottom: 15px;
-    color: black; 
+    color: black;
 }
 
 .security-text p {
@@ -221,34 +196,15 @@ header a:hover {
 }
 
 .security-image {
-    max-width: 100%; /* Imagem na esquerda */
+    max-width: 100%;
 }
 
 .btg-img {
     width: 140%;
     height: auto;
-    max-width: 600px; /* Ajuste a largura máxima para prevenir overflow */
+    max-width: 600px;
     margin-left: 10px;
 }
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .security-container {
-        flex-direction: column;
-        text-align: center; /* Centralizar texto em telas pequenas */
-    }
-
-    .security-text,
-    .security-image {
-        max-width: 100%; /* Imagem e texto ocupam toda a largura */
-    }
-
-    .security-text {
-        text-align: center; /* Alinhar texto ao centro em telas pequenas */
-    }
-}
-
-
 
 /* Form Section Styling */
 .form-section {
@@ -309,7 +265,7 @@ header a:hover {
     margin-left: 10px;
 }
 
-/* Footer Styling with Left and Right Alignments */
+/* Footer Styling */
 footer {
     background-color: #141414;
     color: white;
@@ -323,14 +279,13 @@ footer {
     margin-bottom: 20px;
 }
 
-/* Aligning Logo and WhatsApp on Left, Address on Right */
 .footer-left {
     display: flex;
     align-items: center;
 }
 
 footer img.logo {
-    height: 170px; /* Adjusted logo size */
+    height: 170px;
     width: auto;
     margin-right: 20px;
     pointer-events: none;
@@ -359,10 +314,15 @@ footer img.logo {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    /* Header */
     header {
         flex-direction: column;
-        padding: 20px;
+        padding: 10px;
         align-items: center;
+    }
+
+    header .logo {
+        height: 150px;
     }
 
     header a {
@@ -370,26 +330,104 @@ footer img.logo {
         display: block;
     }
 
+    /* About Section */
+    .about-section {
+        padding: 40px 20px;
+    }
+
+    .about-section h2 {
+        font-size: 24px;
+    }
+
+    /* Client Section */
     .client-section {
         flex-direction: column;
-        text-align: center; /* Center text in small screens */
-    }
-
-    .client-text, .client-image {
-        max-width: 100%; /* Allow full width on small screens */
-    }
-
-    footer {
         text-align: center;
+        padding: 20px;
     }
 
-    .footer-top {
+    .client-container {
         flex-direction: column;
         align-items: center;
     }
 
-    .footer-left,
+    .client-text {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .client-image {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+
+    /* Security Section */
+    .security-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .security-text {
+        max-width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .btg-img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    /* Precatório Info Section */
+    .precatorio-info-section {
+        padding: 20px;
+    }
+
+    .precatorio-info {
+        padding: 0 15px;
+    }
+
+    /* Form Section */
+    .form-section form {
+        width: 90%;
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    /* Footer */
+    .footer-top {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .footer-left {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 15px;
+    }
+
+    footer img.logo {
+        height: 120px;
+        margin-right: 0;
+    }
+
+    .whatsapp-link {
+        font-size: 14px;
+        padding: 10px;
+        width: 100%;
+        justify-content: center;
+        word-break: break-word;
+    }
+
     .footer-right {
         text-align: center;
+        width: 100%;
+    }
+
+    .footer-right p {
+        margin: 5px 0;
     }
 }
