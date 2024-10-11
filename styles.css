@@ -365,18 +365,30 @@ footer img.logo {
     .security-container {
         flex-direction: column;
         text-align: center;
+        align-items: center;
         padding: 20px;
+    }
+
+    .security-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btg-img {
+        width: auto;
+        height: auto;
+        max-width: 200px; /* Ajustado para um tamanho mais apropriado */
+        margin: 0 auto 30px auto; /* Margem inferior aumentada */
+        margin-right: 15px;
+        display: block;
     }
 
     .security-text {
         max-width: 100%;
         text-align: center;
-        margin-top: 20px;
-    }
-
-    .btg-img {
-        width: 100%;
-        margin-left: 0;
+        padding: 0 20px;
     }
 
     /* Precatório Info Section */
