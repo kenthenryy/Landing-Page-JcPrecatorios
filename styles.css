@@ -71,6 +71,12 @@ header a:hover {
     color: #333;
 }
 
+.about-section p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: black;
+}
+
 /* Client Section Styling */
 .client-section {
     padding: 40px;
@@ -203,14 +209,12 @@ header a:hover {
 }
 
 .security-image {
-    max-width: 100%;
+    width: 21rem;
 }
 
 .btg-img {
-    width: 140%;
-    height: auto;
-    max-width: 600px;
-    margin-left: 10px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 /* Form Section Styling */
