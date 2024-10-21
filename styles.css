@@ -24,18 +24,25 @@ body {
 header {
     background-color: #141414;
     color: white;
-    padding: 0px;
+    padding: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 header .logo {
-    height: 200px;
-    width: auto;
-    margin: 0;
+    width: 100%;
+    height: auto;
     pointer-events: none;
     cursor: default;
+}
+
+.header-left {
+    width: 12rem;
+
+
+
 }
 
 header a {
@@ -269,14 +276,13 @@ header a:hover {
 footer {
     background-color: #141414;
     color: white;
-    padding: 20px 40px;
+    padding: 2rem;
 }
 
 .footer-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 .footer-left {
@@ -285,9 +291,8 @@ footer {
 }
 
 footer img.logo {
-    height: 170px;
-    width: auto;
-    margin-right: 20px;
+    width: 12rem;
+    margin-right: 35px;
     pointer-events: none;
     cursor: default;
 }
@@ -317,17 +322,17 @@ footer img.logo {
     /* Header */
     header {
         flex-direction: column;
-        padding: 10px;
+        padding: 20px 0;
         align-items: center;
     }
-
-    header .logo {
-        height: 150px;
+    .header-left {
+        width: 9rem;
     }
 
     header a {
         margin-top: 20px;
         display: block;
+        padding: 10px 40px;
     }
 
     /* About Section */
@@ -381,7 +386,6 @@ footer img.logo {
         height: auto;
         max-width: 200px; /* Ajustado para um tamanho mais apropriado */
         margin: 0 auto 30px auto; /* Margem inferior aumentada */
-        margin-right: 15px;
         display: block;
     }
 
@@ -422,7 +426,7 @@ footer img.logo {
     }
 
     footer img.logo {
-        height: 120px;
+        
         margin-right: 0;
     }
 
